@@ -2,12 +2,12 @@
 ROS publisher for 9DOF IMU on Intel Aero board.
 
 ## ROS Topics
-Publishes raw IMU data on topic 'imu/data_raw' (use package like [imu_filter_madgwick](http://wiki.ros.org/imu_filter_madgwick?distro=kinetic) to generate 'imu/data' with orientation.)
+Publishes raw IMU data on topic 'imu/data_raw' (use package like [imu_filter_madgwick](http://wiki.ros.org/imu_filter_madgwick?distro=kinetic) to generate 'imu/data' with orientation.) Publishes at 100Hz (currently hard coded).
 
-Publishes Magnetometer data on 'imu/mag'
+Publishes Magnetometer data on 'imu/mag'. Publishes at 10Hz (currently hard coded).
 
 ## Requirements
-Accessing the BMI160 (IMU) via SPI requires the user to have permission to access the SPI device. For example, add an spi group, and add the group to your user. 
+Accessing the BMI160 (IMU) via SPI requires the user to have permission to access the SPI device. For example, add an spi group, and add the group to your user.
 
 ```
 sudo chgrp spi /dev/spidev*
