@@ -1,5 +1,5 @@
 # ros_aero_imu
-ROS publisher for 9DOF IMU on Intel Aero board. Tested with ROS Kinetic. The axes and orientation may not conform with ROS specifications.
+ROS publisher for 9DOF IMU on Intel Aero board. Tested with ROS Kinetic. The axes and orientation may not conform with ROS specifications. Based on work from https://github.com/wnukmat/Intel-Aero/tree/master/sensors.
 
 ## ROS Topics
 Publishes raw IMU data on topic 'imu/data_raw' (use package like [imu_filter_madgwick](http://wiki.ros.org/imu_filter_madgwick) to generate 'imu/data' with orientation.) Publishes at 100Hz (currently hard coded).
